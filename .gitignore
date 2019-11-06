@@ -1,3 +1,5 @@
 .idea
-.html
-.xml
+Structure_Robot/Report
+*.html
+*.xml
+
