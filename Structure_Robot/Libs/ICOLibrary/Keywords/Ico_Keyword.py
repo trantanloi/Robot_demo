@@ -13,11 +13,10 @@ class TableKeyword(LibraryComponent):
             print(str(err))
 
     @keyword
-    def verify_title_page(self):
+    def get_title_page(self):
         """Verify title on page current"""
         try:
             if self.driver.title != "":
-                print(self.driver.title)
                 return self.driver.title
             else:
                 raise ElementNotVisibleException

@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Check Result On Page
-Resource   ../../Resources/Pages/Google_Pages.robot
+Resource   ../../Resources/Common/Common.robot
 Variables  ../../Data/Google.yaml
 
 Suite Setup      Open Browser On Page   ${1_1.url}  ${1_1.driver}
@@ -11,5 +11,5 @@ Force Tags   Google_Management 1_1
 Test Case 01: Check Title On Page
     [Documentation]  Test Result About Title
     [Tags]  1_1_2
-    Given User Verify Title On Page
-    When User Input Text On Page Google     ${1_1.text_google}
+    Given get title on page  ${1_1.txt_title}
+    When input keyword   ${1_1.text_google}
