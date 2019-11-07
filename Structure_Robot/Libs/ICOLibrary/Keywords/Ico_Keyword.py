@@ -27,7 +27,17 @@ class TableKeyword(LibraryComponent):
     def input_text_element(self, locator, text_input):
         """Input text on page"""
         try:
-            element = self.driver.find_element_by_name(locator)
+            element = self.driver.find_element_by_id(locator)
             element.send_keys(text_input)
+        except ElementNotVisibleException as err:
+            print(str(err))
+
+    @keyword
+    def get_text_on_page(self, locator):
+        """Get text on locator"""
+        try:
+            element = self.driver.find_element_by_id(locator).text
+            print(element)
+            return element
         except ElementNotVisibleException as err:
             print(str(err))

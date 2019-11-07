@@ -2,6 +2,7 @@
 Documentation  Keywords common
 Library   ICOLibrary
 Resource  ../../Locator/Common_Locator.robot
+Resource  ../SeleniumDemo/SimpleFormDemo.robot
 
 *** Keywords ***
 Open Browser On Page
