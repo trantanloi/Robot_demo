@@ -15,4 +15,3 @@ Test case 1: Single Input Field
     When Enter message  ${2_1.value_message}
     And Click show message button
     Then Verify message on page  ${2_1.value_message}
-    abc
