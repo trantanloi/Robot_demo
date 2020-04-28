@@ -1,0 +1,7 @@
+1_1:
+    url:    "https://www.phptravels.net/admin"
+    driver:  "Chrome"
+    title: "Administator Login"
+    username: "admin@phptravels.com"
+    password: "demoadmin"
+    title_admin: "Dashboard"

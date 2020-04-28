@@ -3,8 +3,8 @@ Documentation  Check Result On Page
 Resource   ../../Resources/Common/Common.robot
 Variables  ../../Data/SimpleFormDemo.yaml
 
-Suite Setup      Open Browser On Page   ${2_1.url}  ${2_1.driver}
-Suite Teardown   Clean Up Data
+Test Setup       Open Browser On Page   ${2_1.driver}     ${2_1.url}
+Test Teardown    Clean Up Data
 Force Tags   Google_Management 1_1
 
 *** Test Cases ***

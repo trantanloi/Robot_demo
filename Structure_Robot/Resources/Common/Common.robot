@@ -1,14 +1,18 @@
 *** Settings ***
 Documentation  Keywords common
 Library   ICOLibrary
+Library   BuiltIn
 Resource  ../../Locator/Common_Locator.robot
-Resource  ../SeleniumDemo/SimpleFormDemo.robot
+Resource  ../PHPTravels/PHPTravels.robot
+
+*** Variables ***
+${time_out}        10
 
 *** Keywords ***
 Open Browser On Page
-    [Arguments]   ${url}    ${driver}
-    open browser  ${url}   ${driver}
-    maximize browser window
+    [Arguments]    ${url}     ${driver}
+    open browser   ${url}     ${driver}
+    Maximize Browser Window
 
 Clean Up Data
     close browser
