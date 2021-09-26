@@ -12,7 +12,7 @@ ${time_out}        10
 Open Browser On Page
     [Arguments]    ${url}     ${driver}
     #Create Webdriver    Firefox    my_alias   executable_path=Driver/geckodriver
-    open browser   ${url}     ${driver}       executable_path=Driver/geckodriver
+    open browser   ${url}     ${driver}       executable_path=Driver/geckodriver.exe
     Maximize Browser Window
 
 Clean Up Data
