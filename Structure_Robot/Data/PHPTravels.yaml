@@ -1,6 +1,6 @@
 1_1:
     url:    "https://www.phptravels.net/admin"
-    driver:  "Chrome"
+    driver:  "firefox"
     title: "Administator Login"
     username: "admin@phptravels.com"
     password: "demoadmin"

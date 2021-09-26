@@ -1,0 +1,5 @@
+robotframework
+robotframework-selenium2library
+PyYAML
+wheel
+selenium

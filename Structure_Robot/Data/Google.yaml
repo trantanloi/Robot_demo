@@ -3,4 +3,4 @@
     text_google: "Ho Chi Minh"
     txt_search_title: "Ho Chi Minh - Tìm với Google"
     url:    "https://google.com"
-    driver:  "Chrome"
+    driver:  "Firefox"
