@@ -11,7 +11,8 @@ ${time_out}        10
 *** Keywords ***
 Open Browser On Page
     [Arguments]    ${url}     ${driver}
-    open browser   ${url}     ${driver}
+    #Create Webdriver    Firefox    my_alias   executable_path=Driver/geckodriver
+    open browser   ${url}     ${driver}       executable_path=Driver/geckodriver
     Maximize Browser Window
 
 Clean Up Data
