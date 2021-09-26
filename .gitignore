@@ -2,4 +2,5 @@
 Structure_Robot/Report
 *.html
 *.xml
+__pycache__
 

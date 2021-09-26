@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Keywords common
-Library   ICOLibrary
+Library   Selenium2Library
 Library   BuiltIn
 Resource  ../../Locator/Common_Locator.robot
 Resource  ../PHPTravels/PHPTravels.robot
@@ -19,7 +19,7 @@ Clean Up Data
 
 Get Title On Page
     [Arguments]  ${txt_title}
-    ${title_page}=   get title page
+    ${title_page}=   get title
     should be equal  ${title_page}  ${txt_title}
 
 Click Search Button
@@ -28,4 +28,4 @@ Click Search Button
 Input Keyword
     [Arguments]  ${text_destination}
     wait until element is visible     ${txt_google}
-    input text element     ${txt_google}    ${text_destination}
+    input text     ${txt_google}    ${text_destination}
