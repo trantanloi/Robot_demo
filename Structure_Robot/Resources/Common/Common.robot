@@ -30,3 +30,5 @@ Input Keyword
     [Arguments]  ${text_destination}
     wait until element is visible     ${txt_google}
     input text     ${txt_google}    ${text_destination}
+
+    #test
